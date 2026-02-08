@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6eaf2;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-box {
+            width: 350px;
+            background-color: #f2f4f8;
+            padding: 30px;
+            border-radius: 20px;
+        }
+        button {
+    background-color: #0b1d4d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+        .welcome {
+            text-align: center;
+            color: #7a2d2d;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #0b1d4d;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #142f80;
+        }
+        .forgot {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #0b1d4d;
+}
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+    </style>
+</head>
+<script src="script.js"></script>
+<body>
+
+    <div class="login-box">
+        <p class="welcome">WELCOME BACK</p>
+
+        <h2>LOGIN PAGE</h2>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" class="input">
+
+        <label>Password</label>
+        <input type="password" id="password"placeholder="Enter your password" class="input">
+        <p id="message"></p>
+
+        <button class="btn" onclick="login()">LOGIN</button>
+        <a href="#" class="forgot">Forgot password?</a>
+
+    </div>
+
+</body>
+</html>
